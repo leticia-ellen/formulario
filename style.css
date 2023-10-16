@@ -1,0 +1,82 @@
+
+main{
+    background-image: url(./imagens/bg-repeat.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mensagem{
+    color: white;
+    width: 300px;
+}
+
+.mensagem h1{
+    font-size: 20px ;
+    font-weight: 900;
+    margin-bottom: 15px;
+    line-height: 24px;
+}
+.mensagem p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.formulario{
+    background-color: white;
+    width: 30vw;
+    height: 60vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.formulario .input{
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.formulario span{
+    margin: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.formulario #btn{
+    background-color: rgb(99, 184, 117) ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+.formulario #btn:active{
+    background-color: rgb(235, 105, 157) ;
+}
+
+.formulario .texto-obrigatorio{
+    color: red;
+    font-size: 8px;
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+    line-height: 0px;
+    display: none;
+}
+
+/* OBRIGATORIO */
+.formulario .input.obrigatorio{
+    margin-bottom: 5px;
+    border: 1px solid red;
+}
+.formulario .texto-obrigatorio.obrigatorio{
+    display: block;
+}
+
+.formulario .input.aprovado{
+    border: 1px solid rgb(37, 158, 64);
+}
